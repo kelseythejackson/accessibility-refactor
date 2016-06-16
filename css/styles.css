@@ -384,12 +384,6 @@ body .social {
       opacity: .4; } }
   body .social em {
     width: 100%; }
-  body .social.twitter {
-    background-image: url("../img/twitter-32.png"); }
-  body .social.youtube {
-    background-image: url("../img/youtube-32.png"); }
-  body .social.spotify {
-    background-image: url("../img/spotify-32.png"); }
   body .social.social:hover {
     opacity: 1; }
 

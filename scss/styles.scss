@@ -3,19 +3,19 @@
 
 
 
-@import 'partials/_variables';
-@import 'partials/_utilites';
+@import 'partials/variables';
+@import 'partials/utilites';
 
 
 
 body {
   @extend %body-styles;
-  @import 'partials/_main-nav';
-  @import 'partials/_header';
-  @import 'partials/_card';
-  @import 'partials/_tour';
-  @import 'partials/_survey';
-  @import 'partials/_footer';
+  @import 'partials/main-nav';
+  @import 'partials/header';
+  @import 'partials/card';
+  @import 'partials/tour';
+  @import 'partials/survey';
+  @import 'partials/footer';
 }
 
 
