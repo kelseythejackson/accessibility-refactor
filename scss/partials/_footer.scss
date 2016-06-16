@@ -1,0 +1,67 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 30px;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto $margin;
+    padding: 0;
+    width: 200px;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .copyright {
+    font-size: 1rem;
+    margin-bottom: $margin;
+    top: -8px;
+  }
+}
+
+.social {
+  background-size: 30px 30px;
+  color: $saffron;
+  display: inline-block;
+  height: 30px;
+  //margin-left: 5px;
+  opacity: 1;
+  transition: all .5s;
+  width: 30px;
+
+  @media screen and (min-width: 840px) {
+    opacity: .4;
+  }
+
+  em {
+    width: 100%;
+  }
+
+
+  &.twitter {
+    background-image: url('../img/twitter-32.png');
+  }
+
+  &.youtube {
+    background-image: url('../img/youtube-32.png');
+  }
+
+  &.spotify {
+    background-image: url('../img/spotify-32.png');
+  }
+
+  &.social:hover {
+    opacity: 1;
+  }
+}
+
+
+.clearfix {
+  clear: both;
+}

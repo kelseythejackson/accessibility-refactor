@@ -1,0 +1,47 @@
+header {
+  align-items: center;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center;
+  background-color: $white;
+  background-size: cover;
+  color: $mine-shaft;
+  display: flex;
+  flex-direction: column;
+  font-family: $open-sans;
+  font-weight: 900;
+  height: 350px;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: $transition;
+
+  @media screen and (min-width: 840px) {
+    min-height: 470px;
+    padding: 0;
+  }
+
+  .name {
+    font-size: 2.75rem;
+    // letter-spacing: 5px;
+    transition: $transition;
+
+    @media screen and (min-width: 840px) {
+      font-size: 4.5rem;
+    }
+  }
+
+  .tagline {
+    color: $claret;
+    font-size: 1.35rem;
+    font-weight: 600;
+    padding: 20px;
+    text-transform: lowercase;
+
+    @media screen and (min-width: 840px) {
+      font-size: 2.5rem;
+    }
+  }
+
+
+}

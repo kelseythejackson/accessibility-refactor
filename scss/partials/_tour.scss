@@ -1,0 +1,70 @@
+.tour-dates::before {
+  content: url('../img/guitar_pic_pseudo.png');
+  margin-left: -30px;
+  position: absolute;
+  top: 0;
+}
+
+.tour-dates::after {
+  content: url('../img/guitar_pic_pseudo.png');
+  margin-left: 10px;
+  position: absolute;
+  top: 0;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  caption {
+    padding: 12px;
+  }
+
+  thead {
+
+    color: $baltic-sea;
+    tr {
+      background-color: $saffron;
+      &:first-child {
+        background-color: $saffron;
+      }
+    }
+  }
+
+  tr {
+    font-size: .8125rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+    }
+
+    &:nth-child(even) {
+      background-color: darken($baltic-sea, 15%);
+    }
+
+    &:nth-child(odd) {
+      background-color: lighten($baltic-sea, 15%);
+    }
+  }
+
+  th,
+  td {
+    padding: 6px;
+
+    @media screen and (min-width: 768px) {
+      padding: $padding;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+.date {
+  color: $saffron;
+}

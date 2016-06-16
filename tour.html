@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <link href="css/styles.css" rel="stylesheet" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+      <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <div class="main-nav" role="navigation">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="#">Tour</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </div>
+
+    <header role="banner">
+      <span class="name">Accessible Frog</span>
+      <span class="tagline">we make awesome music</span>
+    </header>
+
+    <main role="main">
+      <div class="card">
+
+        <div class="flex">
+          <table>
+            <caption id="caption"><h1 class= "heading tour-dates">Tour Dates</h1></caption>
+            <thead>
+              <tr>
+                <th scope="col" id="date">Date</th>
+                <th scope="col" id="venue">Venue</th>
+                <th scope="col" id="location">Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="date" id="march10">Mar 10 - 12</th>
+                <td headers="march10">The Warfield</td>
+                <td headers="march10">San Francisco, CA</td>
+              </tr>
+              <tr>
+                <th scope="row" class="date" id="march20">Mar 20 - 23</th>
+                <td headers="march20">Pepsi Center</td>
+                <td headers="march20">Denver, CO</td>
+              </tr>
+              <tr>
+                <th scope="row" class="date" id="apr1">Apr 2 - 4 </th>
+                <td headers="apr1">Beacon Theatre</td>
+                <td headers="apr1">New York City, NY</td>
+              </tr>
+              <tr>
+                <th scope="row" class="date" id="apr10">Apr 10 </th>
+                <td headers="apr10">Paramount Theatre</td>
+                <td headers="apr10">Seattle, WA</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <ul>
+        <li><a href="#" class="social" title="twitter" aria-hidden="true"><img alt="twitter" src="img/social-twitter.svg"></a></li>
+        <li><a href="#" class="social" title="youtube" aria-hidden="true">
+          <img alt="youtube" src="img/social-youtube.svg"></a></li>
+        <li><a href="#" class="social" title="spotify" aria-hidden="true"><img alt="spotify" src="img/social-spotify.svg"></a></li>
+      </ul>
+      <p class="copyright">Copyright 2016, Accessible Frog</p>
+    </footer>
+  </body>
+</html>

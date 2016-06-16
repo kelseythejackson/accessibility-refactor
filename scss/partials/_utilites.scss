@@ -1,0 +1,242 @@
+%body-styles {
+  background: $baltic-sea;
+  color: $alto;
+  font-family: $open-sans;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+%padding-top {
+  margin: 0;
+
+  &.padding-top {
+    padding: 5px 0 0;
+  }
+}
+
+%no-margin-top {
+  &.no-margin-top {
+    margin-top: 0;
+  }
+}
+
+%margin-right {
+  &.margin-right {
+    margin-right: $margin;
+  }
+}
+
+%float-right {
+  @media screen and (min-width: 768px) {
+    &.float-right {
+      float: right;
+
+    }
+  }
+}
+
+p {
+  @extend %padding-top;
+
+  &#submit,
+  &#name,
+  &#email,
+  &#confirm-email {
+    display: none;
+  }
+}
+
+%name-hover {
+  &:hover {
+    border-bottom: 2px solid transparent;
+    color: $white;
+  }
+}
+
+%name {
+  &.name {
+    color: $white;
+    display: block;
+    letter-spacing: 5px;
+    margin-right: auto;
+
+    a {
+      @extend %name-hover;
+      color: $dusty-gray;
+      font-weight: 300;
+    }
+  }
+}
+
+%li-link {
+  a {
+    border-bottom: 2px solid transparent;
+    color: $saffron;
+    transition: all .5s;
+
+    &:hover {
+      border-bottom: 2px solid darken($saffron, .5);
+      color: darken($saffron, .5);
+    }
+  }
+}
+
+input,
+input:focus,
+button,
+select,
+textarea {
+  border: 0;
+  outline-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: $dusty-gray;
+  text-decoration: none;
+  &:focus {
+    color: $dusty-gray;
+  }
+}
+
+
+
+.cta {
+  @extend %float-right;
+  background-color: $saffron;
+  border-radius: 4px;
+  color: $baltic-sea;
+  display: inline-block;
+  font-size: 16px;
+  margin: 16px 0 -32px;
+
+  padding: 12px;
+  transition: $transition;
+
+  @media screen and (min-width: 768px) {
+    max-width: 150px;
+  }
+
+  &:hover {
+    background-color: darken($saffron, 15%);
+  }
+
+}
+
+%center-text {
+  &.center {
+    text-align: center;
+  }
+}
+
+
+// .photo {
+//   display: block;
+//   height: 0%;
+//   margin: 0 auto;
+//   width: 200px;
+// }
+
+.photo {
+  @extend %margin-right;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    max-width: 320px;
+    min-width: 320px;
+  }
+}
+
+.information {
+  text-align: center;
+  width: 100%;
+  // display: inline-block;
+  // position: absolute;
+  @media screen and (min-width: 768px) {
+    max-width: 360px;
+    text-align: left;
+  }
+}
+
+.heading {
+  @extend %center-text;
+  color: $saffron;
+  font-size: 2em;
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+
+  &.tour-dates {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+}
+
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: center;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    max-width: 1200px;
+
+    &.survey {
+      flex-direction: column;
+    }
+  }
+}
+
+.fav-band-member {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  li {
+    align-items: baseline;
+    display: flex;
+    width: 50%;
+  }
+}
+
+fieldset {
+  border-radius: 4px;
+}
+
+
+
+
+@-moz-document url-prefix() {
+  .photo {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .photo-container {
+    max-height: 320px;
+    max-width: 320px;
+  }
+}

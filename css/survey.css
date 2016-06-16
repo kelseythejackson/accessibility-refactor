@@ -1,0 +1,81 @@
+/* Survey page styles */
+
+/*.photo{
+  width: 100%;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+
+.container{
+  text-align: center;
+}
+.newsletter{
+  text-align: left;
+
+}
+
+label {
+  display: inline-block;
+  margin: 1.5rem 0 0.5rem;
+}
+
+
+select, input[type="text"], input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 44px;
+  padding-left: 8px;
+  background: transparent;
+  font-size: 16px;
+  width: 100%;
+  color: #fff;
+  border: 1px solid rgba(255,255,255, .4);
+  border-radius: 4px;
+  transition: .25s;
+
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+  background: #464547;
+  border: 1px solid transparent;
+}
+
+.input-holder {
+  position: relative;
+}
+
+.input-holder label {
+  position: absolute;
+  top: 0;
+}
+input[type="text"]:focus + label, input[type="email"]:focus + label  {
+  color: blue;
+}
+
+select::before {
+          content: url(../img/chevron_white.png);
+          height: 44px;
+          position: absolute;
+          width: 44px;
+          right: 0;
+          top: 0;
+        }
+
+
+button[type="submit"] {
+  height: 44px;
+  width: 100%;
+  margin: 1.5rem 0 0;
+}*/
+/* Styles for larger screens */
+/*@media screen and (min-width: 840px) {
+  .photo{
+    width: 40%;
+  }
+}*/

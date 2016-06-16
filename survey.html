@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <!--<link href="css/survey.css" rel="stylesheet" type="text/css" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+<body>
+  <div class="main-nav" role="navigation">
+    <ul class="nav">
+      <li class="name"><a href="index.html">Accessible Frog</a></li>
+      <li><a href="tour.html">Tour</a></li>
+      <li><a href="#">Survey</a></li>
+    </ul>
+  </div>
+
+  <header role="banner">
+    <span class="name">Accessible Frog</span>
+    <span class="tagline">we make awesome music</span>
+  </header>
+
+  <main role="main">
+
+    <div class="card">
+      <div class="flex survey">
+        <h1 class="heading center">Survey</h1>
+
+        <div class="container">
+          <div class="photo-container">
+          <img class="photo margin-right" alt="" src= "img/concert01.jpg">
+            </div>
+          <form class="survey">
+            <fieldset>
+              <legend>Survey</legend>
+            <p class="padding-top">Who is your favorite band member:</p>
+            <ul class="fav-band-member">
+              <li><input type="radio" id="john" name="res" value="John"> <label for="john"><span class="radio margin-right"></span>John</label></li>
+              <li><input type="radio" id="hazzard" name="res" value="Hazzard"> <label for="hazzard"><span class="radio margin-right"></span>Hazzard</label></li>
+              <li><input type="radio" id="bob" name="res" value="Bob"> <label for="bob"><span class="radio margin-right"></span>Bob</label></li>
+              <li><input type="radio" id="sally" name="res" value="Sally"> <label for="sally"><span class="radio margin-right"></span>Sally</label></li>
+            </ul>
+
+
+
+
+            <div class="input-holder">
+            <div class="select-wrapper">
+              <select id="albums" name="select">
+                <option value="1">A Day Of Old</option>
+                <option value="2">Diamond Fireworks</option>
+                <option value="3">Enjoy Your Desire</option>
+                <option value="4">Finding My Shadow</option>
+                <option value="5">Heroic Forever</option>
+                <option value="6">Party For An Angel</option>
+                <option value="7">Midnight Fires</option>
+                <option value="8">Music Of My Life</option>
+                <option value="9">Song For Yesterday</option>
+                <option value="10">Street Of The Rider</option>
+                <option value="11">This Is For You</option>
+              </select>
+              <span class="carat"></span>
+              <label for="albums">What is your favorite album:</label>
+            </div>
+
+              </div>
+
+            <div class="input-holder">
+              <input id="fav-song" type="text" name="fave-song" value="" placeholder="Favorite song?">
+            <label for="fav-song">What is your favorite song:</label>
+
+          </div>
+
+            </fieldset>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="flex survey">
+        <h1 class= "heading center">Newsletter</h1>
+
+        <div class="container">
+          <div class="photo-container">
+          <img class="photo  margin-right" alt="" src= "img/the_band.jpg">
+          </div>
+          <form class="newsletter">
+            <fieldset>
+              <legend>Newsletter</legend>
+            <div class="input-holder">
+              <input id="nl-name" type ="text" name="nl-name" aria-describedby="name" placeholder="Name">
+              <label class="padding-top no-margin-top" for="nl-name">Name:</label>
+              <p id="name">Please provide your name</p>
+            </div>
+
+            <div class="input-holder">
+              <input id="nl-email" type ="email" name="nl-email" aria-describedby="email" placeholder="Email">
+              <label for="nl-email">Email:</label>
+              <p id="email">Please verify your email</p>
+            </div>
+            <div class="input-holder">
+              <input id="nl-confirm" type="email" name="nl-confirm" aria-describedby="confirm-email" placeholder="Confirm email">
+              <label for="nl-confirm">Retype Email:</label>
+              <p id="confirm-email">Please confirm your email</p>
+            </div>
+
+            </fieldset>
+            <button class="cta float-right" type="submit" role="button" aria-describedby="submit">Sign Up</button>
+            <p id="submit">We'll take the info you provided and sign you up for our quarterly newsletter</p>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <ul>
+      <li><a href="#" class="social" title="twitter" aria-hidden="true"><img alt="twitter" src="img/social-twitter.svg"></a></li>
+      <li><a href="#" class="social" title="youtube" aria-hidden="true">
+        <img alt="youtube" src="img/social-youtube.svg"></a></li>
+      <li><a href="#" class="social" title="spotify" aria-hidden="true"><img alt="spotify" src="img/social-spotify.svg"></a></li>
+    </ul>
+    <p class="copyright">Copyright 2016, Accessible Frog</p>
+  </footer>
+</body>
+</html>
+
+

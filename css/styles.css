@@ -1,0 +1,409 @@
+body {
+  background: #2d2b30;
+  color: #ccc;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+p, body label {
+  margin: 0; }
+  p.padding-top, body label.padding-top {
+    padding: 5px 0 0; }
+
+body label.no-margin-top {
+  margin-top: 0; }
+
+.margin-right.photo, body label span.margin-right.radio {
+  margin-right: 12px; }
+
+@media screen and (min-width: 768px) {
+  .float-right.cta {
+    float: right; } }
+
+p#submit, p#name, p#email, p#confirm-email {
+  display: none; }
+
+body .main-nav .nav li.name a:hover {
+  border-bottom: 2px solid transparent;
+  color: #fff; }
+
+body .main-nav .nav li.name {
+  color: #fff;
+  display: block;
+  letter-spacing: 5px;
+  margin-right: auto; }
+  body .main-nav .nav li.name a {
+    color: #999;
+    font-weight: 300; }
+
+body .main-nav .nav li a {
+  border-bottom: 2px solid transparent;
+  color: #f2c040;
+  transition: all .5s; }
+  body .main-nav .nav li a:hover {
+    border-bottom: 2px solid #f2bf3e;
+    color: #f2bf3e; }
+
+input,
+input:focus,
+button,
+select,
+textarea {
+  border: 0;
+  outline-style: none; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+a {
+  color: #999;
+  text-decoration: none; }
+  a:focus {
+    color: #999; }
+
+.cta {
+  background-color: #f2c040;
+  border-radius: 4px;
+  color: #2d2b30;
+  display: inline-block;
+  font-size: 16px;
+  margin: 16px 0 -32px;
+  padding: 12px;
+  transition: 0.4s; }
+  @media screen and (min-width: 768px) {
+    .cta {
+      max-width: 150px; } }
+  .cta:hover {
+    background-color: #d79f0f; }
+
+.center.heading {
+  text-align: center; }
+
+.photo {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .photo {
+      margin: 0;
+      max-width: 320px;
+      min-width: 320px; } }
+
+.information {
+  text-align: center;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .information {
+      max-width: 360px;
+      text-align: left; } }
+
+.heading {
+  color: #f2c040;
+  font-size: 2em;
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase; }
+  .heading.tour-dates {
+    text-align: center; }
+  @media screen and (min-width: 768px) {
+    .heading {
+      text-align: left; } }
+
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: center;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .flex {
+      flex-direction: row;
+      max-width: 1200px; }
+      .flex.survey {
+        flex-direction: column; } }
+
+.fav-band-member {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .fav-band-member li {
+    align-items: baseline;
+    display: flex;
+    width: 50%; }
+
+fieldset {
+  border-radius: 4px; }
+
+@-moz-document url-prefix() {
+  .photo {
+    height: 100%;
+    overflow: hidden;
+    width: 100%; }
+  .photo-container {
+    max-height: 320px;
+    max-width: 320px; } }
+
+body .main-nav {
+  background: #2d2b30;
+  box-shadow: 3px 0 3px #000;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 4; }
+  @media screen and (min-width: 840px) {
+    body .main-nav {
+      background: rgba(45, 43, 48, 0.8); } }
+  body .main-nav .nav {
+    display: flex;
+    font-weight: 700;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0; }
+    body .main-nav .nav li {
+      padding: 5px 10px 10px; }
+    @media screen and (min-width: 840px) {
+      body .main-nav .nav {
+        max-width: 1200px;
+        padding: 0 30px; } }
+
+body header {
+  align-items: center;
+  background: url("../img/concert02_no_text.jpg") no-repeat top center;
+  background-color: #fff;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  height: 350px;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.4s; }
+  @media screen and (min-width: 840px) {
+    body header {
+      min-height: 470px;
+      padding: 0; } }
+  body header .name {
+    font-size: 2.75rem;
+    transition: 0.4s; }
+    @media screen and (min-width: 840px) {
+      body header .name {
+        font-size: 4.5rem; } }
+  body header .tagline {
+    color: #781125;
+    font-size: 1.35rem;
+    font-weight: 600;
+    padding: 20px;
+    text-transform: lowercase; }
+    @media screen and (min-width: 840px) {
+      body header .tagline {
+        font-size: 2.5rem; } }
+
+body .card {
+  border-top: 4px solid #f2c040;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  margin: 30px 12px 12px;
+  max-width: 1000px;
+  padding: 12px 0;
+  text-align: left;
+  transition: .3s; }
+  @media screen and (min-width: 768px) {
+    body .card {
+      margin: 40px auto;
+      padding: 20px 40px 40px;
+      width: 80%; } }
+
+body .card:hover {
+  border-color: #a77b0b; }
+
+body .tour-dates::before {
+  content: url("../img/guitar_pic_pseudo.png");
+  margin-left: -30px;
+  position: absolute;
+  top: 0; }
+
+body .tour-dates::after {
+  content: url("../img/guitar_pic_pseudo.png");
+  margin-left: 10px;
+  position: absolute;
+  top: 0; }
+
+body table {
+  border-collapse: collapse;
+  width: 100%; }
+  body table caption {
+    padding: 12px; }
+  body table thead {
+    color: #2d2b30; }
+    body table thead tr {
+      background-color: #f2c040; }
+      body table thead tr:first-child {
+        background-color: #f2c040; }
+  body table tr {
+    font-size: .8125rem; }
+    @media screen and (min-width: 768px) {
+      body table tr {
+        font-size: 1rem; } }
+    body table tr:nth-child(even) {
+      background-color: #070708; }
+    body table tr:nth-child(odd) {
+      background-color: #534f58; }
+  body table th,
+  body table td {
+    padding: 6px; }
+    @media screen and (min-width: 768px) {
+      body table th,
+      body table td {
+        padding: 12px; } }
+
+body .date {
+  color: #f2c040; }
+
+body form {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  width: 100%; }
+
+body .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    body .container {
+      flex-direction: row; } }
+
+body .newsletter {
+  text-align: left; }
+
+body label {
+  color: #ccc;
+  display: flex;
+  margin: 1.5rem 0 0.5rem; }
+  body label span.radio {
+    background: url("../img/radio-button.svg") no-repeat;
+    height: 20px;
+    width: 20px; }
+
+body select,
+body [type="text"],
+body [type="email"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  color: #ccc;
+  font-size: 16px;
+  height: 44px;
+  padding-left: 8px;
+  position: relative;
+  transition: 0.4s;
+  width: 100%;
+  z-index: 20; }
+
+body select:focus,
+body [type="text"]:focus,
+body [type="email"]:focus {
+  border: 1px solid #f2c040;
+  color: #f2c040; }
+
+body .input-holder {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative; }
+
+body select:focus + .carat + label,
+body [type="text"]:focus + label,
+body [type="email"]:focus + label {
+  color: #f2c040; }
+
+body [type="radio"] {
+  display: none; }
+  body [type="radio"]:checked + label {
+    color: #f2c040; }
+    body [type="radio"]:checked + label .radio {
+      background: url("../img/radio-button-checked.svg") no-repeat; }
+
+body .select-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative; }
+  body .select-wrapper select + .carat {
+    background: url("../img/chevron_white.svg");
+    height: 44px;
+    position: absolute;
+    right: 0;
+    width: 44px; }
+  body .select-wrapper select:focus + .carat {
+    background: url("../img/chevron_saffron.svg"); }
+
+body [type="submit"] {
+  height: 44px;
+  margin: 1.5rem 0 0;
+  width: 100%; }
+
+body footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 30px;
+  width: 100%; }
+  body footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto 12px;
+    padding: 0;
+    width: 200px; }
+    body footer ul li {
+      display: inline-block; }
+  body footer .copyright {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    top: -8px; }
+
+body .social {
+  background-size: 30px 30px;
+  color: #f2c040;
+  display: inline-block;
+  height: 30px;
+  opacity: 1;
+  transition: all .5s;
+  width: 30px; }
+  @media screen and (min-width: 840px) {
+    body .social {
+      opacity: .4; } }
+  body .social em {
+    width: 100%; }
+  body .social.twitter {
+    background-image: url("../img/twitter-32.png"); }
+  body .social.youtube {
+    background-image: url("../img/youtube-32.png"); }
+  body .social.spotify {
+    background-image: url("../img/spotify-32.png"); }
+  body .social.social:hover {
+    opacity: 1; }
+
+body .clearfix {
+  clear: both; }
+
+/*# sourceMappingURL=styles.css.map */

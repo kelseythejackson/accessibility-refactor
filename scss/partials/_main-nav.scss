@@ -1,0 +1,36 @@
+.main-nav {
+  background: $baltic-sea;
+  box-shadow: 3px 0 3px $black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 4;
+
+  @media screen and (min-width: 840px) {
+    background: rgba($baltic-sea, .8);
+  }
+
+  .nav {
+    display: flex;
+    font-weight: 700;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+
+    li {
+      @extend %li-link;
+      @extend %name;
+      padding: 5px 10px 10px;
+
+
+    }
+
+    @media screen and (min-width: 840px) {
+      max-width: 1200px;
+      padding: 0 $padding * 2.5;
+    }
+  }
+}

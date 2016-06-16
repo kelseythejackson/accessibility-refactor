@@ -1,0 +1,132 @@
+
+
+form {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.newsletter {
+  text-align: left;
+}
+
+label {
+  @extend %no-margin-top;
+  @extend %padding-top;
+
+  color: $alto;
+  display: flex;
+  margin: 1.5rem 0 0.5rem;
+
+  span {
+    &.radio {
+      @extend %margin-right;
+      background: url('../img/radio-button.svg') no-repeat;
+
+      height: 20px;
+      width: 20px;
+
+      //&:checked {
+      //  background: url('../img/radio-button-checked.svg') no-repeat;
+      //}
+    }
+  }
+}
+
+
+select,
+[type="text"],
+[type="email"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 1px solid rgba($white, .4);
+  border-radius: 4px;
+  color: $alto;
+  font-size: 16px;
+  height: 44px;
+  padding-left: 8px;
+  position: relative;
+  transition: $transition;
+  width: 100%;
+  z-index: 20;
+}
+select:focus,
+[type="text"]:focus,
+[type="email"]:focus {
+  // background: lighten($baltic-sea, 25%);
+  border: 1px solid $saffron;
+  color: $saffron;
+}
+
+.input-holder {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+
+  label {
+
+  }
+}
+
+
+select:focus + .carat + label,
+[type="text"]:focus + label,
+[type="email"]:focus + label {
+  color: $saffron;
+}
+[type="radio"] {
+  display: none;
+  &:checked + label {
+    color: $saffron;
+    .radio {
+      background: url('../img/radio-button-checked.svg') no-repeat;
+    }
+  }
+}
+
+.select-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+
+
+  select {
+    + .carat {
+      background: url('../img/chevron_white.svg');
+      height: 44px;
+      position: absolute;
+      right: 0;
+      //top: 0;
+      width: 44px;
+    }
+
+    &:focus + .carat {
+      background: url('../img/chevron_saffron.svg');
+    }
+  }
+
+
+}
+
+
+
+[type="submit"] {
+  height: 44px;
+  margin: 1.5rem 0 0;
+  width: 100%;
+}
+//*:focus {
+//  color: $black;
+//}
