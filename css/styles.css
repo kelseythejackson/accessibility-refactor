@@ -86,7 +86,6 @@ a {
 
 .photo {
   display: block;
-  height: 100%;
   margin: 0 auto;
   padding: 10px;
   width: 100%; }
@@ -142,15 +141,6 @@ a {
 
 fieldset {
   border-radius: 4px; }
-
-@-moz-document url-prefix() {
-  .photo {
-    height: 100%;
-    overflow: hidden;
-    width: 100%; }
-  .photo-container {
-    max-height: 320px;
-    max-width: 320px; } }
 
 body .main-nav {
   background: #2d2b30;
